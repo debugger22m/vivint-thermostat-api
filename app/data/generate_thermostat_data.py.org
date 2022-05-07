@@ -1,0 +1,42 @@
+import random
+import json
+import uuid
+
+class GenerateData:
+      
+   def init():
+     data = {}
+     device_num = random.randint(3, 7)
+
+     fan = ['on', 'off', 'auto']
+     state = ['actively cooling', 'actively heating']
+     
+
+     data['user_id'] = str(uuid.uuid4())
+     devices = [] 
+     
+     for i in range(device_num):
+         config = {}
+       
+         config['vivint_thermostat_id'] = str(uuid.uuid4())
+         config['max_temp'] = random.randint(25, 125)
+         config['max_temp'] = random.randint(25, 125)
+         config['target_temp'] = random.randint(50, 100)
+         config['current_temp'] = random.randint(50, 80)
+         config['fan'] = fan[random.randint(0, len(fan) - 1 )]
+         config['state'] = state[random.randint(0, len(state) - 1)]
+         devices.append(config)
+
+     data['config'] = devices
+     json_data = json.dumps(data, indent=2)
+     return json.loads(json_data)
+
+   def load(limit):
+     data = []
+     
+     for i in range(limit):
+        data.append(GenerateData.init())
+     
+     return data
+
+
