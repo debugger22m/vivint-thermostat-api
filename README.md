@@ -39,17 +39,7 @@ I created these mappings for the PUT APIs. So we don't need to send string value
 thermostat_state = {0: "actively cooling", 1: "actively heating"}
 thermostat_fan_mode = {0 : "off", 1 : "on", 2 : "auto"}
 
-
-**Directory Structure**
-.
-├── app
-│   ├── __init__.py
-│   ├── main.py  #Main module. Init API routes
-│   └── routes
-│   │   ├── __init__.py
-│   │   ├── thermostat.py #Thermostat APIs
-│   └── data
-        └── generate_thermostat_data.py.py #Helper class for generating thermostat data set.
+<img width="740" alt="Screen Shot 2022-05-06 at 9 38 17 PM" src="https://user-images.githubusercontent.com/21069692/167236670-1339742e-03aa-44f3-be75-08d0eab4d40f.png">
 
 
 **How can we improve this API**
