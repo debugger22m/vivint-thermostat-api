@@ -42,7 +42,7 @@ thermostat_fan_mode = {0 : "off", 1 : "on", 2 : "auto"}
 <img width="740" alt="Screen Shot 2022-05-06 at 9 38 17 PM" src="https://user-images.githubusercontent.com/21069692/167236670-1339742e-03aa-44f3-be75-08d0eab4d40f.png">
 
 
-**How can we improve this API**
+**How can we improve this API?**
 
 - **Security:** Each API requests needs to be authenticated. The security token issued by the AUTH service should be validated. For example if we are using JWT token for validating requests and authorization, we will need to set timeouts and do not store these tokens anywhere. The USER/Client needs to re auth after some time again. Verify and discard header options. The API should be using secure headers to prevent attacks like cross-site scripting(XSS)
 
