@@ -5,7 +5,9 @@ Design and implement an API for a simple cloud-based service to control customer
 The user of the API should be able to
 
 GET the current actual temperature.
+
 GET and SET the temperature set points, i.e., set the desired heating/cooling target temperature.
+
 GET and SET the state of the thermostat, i.e., actively heating/cooling, fan on/off/auto, etc.
 
 Bonus stretch goal:  If you have time and interest, it would be fun to have the current actual temperature respond slowly to the state and temperature set-point(s) of the thermostat.
